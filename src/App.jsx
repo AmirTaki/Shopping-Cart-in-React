@@ -15,12 +15,12 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path = "/" element = {<Layout />}/>
-          
+          <Route index element = {<Home/>} />
         </Routes>
       </BrowserRouter>  
     </>
 
   )
-}
+}``
 
 export default App
