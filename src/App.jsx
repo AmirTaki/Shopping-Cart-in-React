@@ -4,7 +4,8 @@ import './App.css';
 import Layout from  "./components/Layout";
 import Header from "./components/Header";
 import CarTab from "./components/CarTab";
-import Home from "./pages/Home"
+import Home from "./pages/Home";
+import Detail from "./pages/Detail"
 
 function App() {
 
@@ -17,7 +18,9 @@ function App() {
       <Header />
       <CarTab />
       <Home />
+      <Detail />
     </>
+
   )
 }
 
