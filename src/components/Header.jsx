@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
     return (
-        <>
-            Header
-        </>
+        <header>
+            <Link to = '/' className="text-xl font-semibold">Home.</Link>
+        </header>
     )
 }
 
