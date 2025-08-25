@@ -3,7 +3,7 @@ import './App.css';
 
 import Layout from  "./components/Layout"
 import Header from "./components/Header";
-
+import CarTab from "./components/CarTab"
 function App() {
 
   return (
@@ -12,8 +12,8 @@ function App() {
         Hello world!
        </h1>
        <Layout />
-        <Header />
-      
+      <Header />
+      <CarTab />
 
     </>
   )
