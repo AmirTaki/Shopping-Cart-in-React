@@ -24,5 +24,13 @@ export const Products = [
         description : "Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute",
         slug: "bingdon-pholstered-chair-swivel"
     },
+    {
+        id : 3,
+        name : "Jeses Minimore Modern Style Etta",
+        price : 181, 
+        image : imageProduct3,
+        description : "Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute",
+        slug: "jeses-minimore-modern-style-etta"
+    },
   
 ] 
