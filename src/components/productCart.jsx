@@ -1,8 +1,8 @@
-const productCart = () => {
+const ProductCart = () => {
     return(
         <>
-        
+            aafd
         </>
     )
 }
-export default productCart;
+export default ProductCart;
