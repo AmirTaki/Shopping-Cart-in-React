@@ -1,5 +1,7 @@
 
-import './App.css'
+import './App.css';
+
+import Layout from  "./components/Layout"
 
 function App() {
 
@@ -8,6 +10,8 @@ function App() {
       <h1 class="text-3xl font-bold underline text-red-200">
         Hello world!
        </h1>
+       <Layout />
+      
 
     </>
   )
