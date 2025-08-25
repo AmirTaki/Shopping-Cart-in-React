@@ -1,9 +1,11 @@
 
 import './App.css';
 
-import Layout from  "./components/Layout"
+import Layout from  "./components/Layout";
 import Header from "./components/Header";
-import CarTab from "./components/CarTab"
+import CarTab from "./components/CarTab";
+import Home from "./pages/Home"
+
 function App() {
 
   return (
@@ -14,7 +16,7 @@ function App() {
        <Layout />
       <Header />
       <CarTab />
-
+      <Home />
     </>
   )
 }
