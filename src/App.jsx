@@ -5,7 +5,10 @@ function App() {
 
   return (
     <>
-      <p>test</p>
+      <h1 class="text-3xl font-bold underline text-red-200">
+        Hello world!
+       </h1>
+
     </>
   )
 }
