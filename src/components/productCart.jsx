@@ -1,7 +1,11 @@
 import { Link, Route } from "react-router-dom";
 import iconCart from "../assets/images/iconCart.png"
+import { useSelector } from "react-redux";
+
 
 const ProductCart = (props) => {
+    const carts = useSelector(store => store.cart.items);
+    console.log(carts)
     const {id, name, price, image, slug} = props.data;
     return(
         <div className="bg-white p-5 rounded-xl shadow-sm">
