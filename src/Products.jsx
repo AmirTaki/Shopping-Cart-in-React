@@ -10,26 +10,19 @@ import imageProduct8 from "./assets/images/8.png";
 export const Products = [
     {
         id : 1,
-        name : "",
+        name : "Hertfoid Upholstered Chair",
         price : 101, 
         image : imageProduct1,
-        description : "",
-        slug: ""
+        description : "Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute",
+        slug: "hertfoid-upholstered-chair"
     },
     {
         id : 2,
-        name : "",
-        price : 101, 
+        name : "Abingdon Upholstered Chair Swivel",
+        price : 151, 
         image : imageProduct2,
-        description : "",
-        slug: ""
+        description : "Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute",
+        slug: "bingdon-pholstered-chair-swivel"
     },
-    {
-        id : 3,
-        name : "",
-        price : 101, 
-        image : imageProduct3,
-        description : "",
-        slug: ""
-    },
+  
 ] 
