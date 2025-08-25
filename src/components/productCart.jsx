@@ -13,6 +13,9 @@ const ProductCart = (props) => {
                 <p>
                     $<span className="text-2xl font-medium">{price}</span>
                 </p>
+                <button className="bg-gray-300 p-2 rounded-md text-sm hover:bg-gray-400">
+                    Add To Cart
+                </button>
             </div>
         </div>
     )
