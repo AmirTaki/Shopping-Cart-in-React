@@ -6,7 +6,11 @@ import CarTab from "./CarTab";
 const Layout = () => {
     return(
         <>
-            <div className="">Layout <Outlet /></div>
+            <main>
+                <Header />
+                <Outlet />
+            </main>
+            <CarTab />
         </>
     )
 }
