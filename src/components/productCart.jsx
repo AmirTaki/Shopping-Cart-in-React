@@ -1,4 +1,5 @@
-const ProductCart = () => {
+const ProductCart = (props) => {
+    const {id, name, price, image, slug} = props.data;
     return(
         <div>
             aafd
