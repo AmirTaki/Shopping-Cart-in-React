@@ -15,5 +15,21 @@ export const Products = [
         image : imageProduct1,
         description : "",
         slug: ""
-    }
+    },
+    {
+        id : 2,
+        name : "",
+        price : 101, 
+        image : imageProduct2,
+        description : "",
+        slug: ""
+    },
+    {
+        id : 3,
+        name : "",
+        price : 101, 
+        image : imageProduct3,
+        description : "",
+        slug: ""
+    },
 ] 
