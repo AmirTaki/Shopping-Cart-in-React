@@ -5,8 +5,9 @@ const Header = () => {
     return (
         <header>
             <Link to = '/' className="text-xl font-semibold">Home.</Link>
-            <div className="">
-                <img src={iconCart} alt="" />
+            <div className="w-10 h-10 bg-gray-100 rounded-full flex justify-center items-center relative">
+                <img src={iconCart} alt="" className="w-6" />
+                <span>0</span>
             </div>
         </header>
     )
