@@ -6,8 +6,9 @@ import { useEffect, useState } from "react";
 
 
 const Header = () => {
-    const [totalQuantity, setTotalQuantity] = useState(0)
+    const [totalQuantity, setTotalQuantity] = useState(0);
     const carts = useSelector(store => store.cart.items);
+     const dispatch = useDispatch();
     useEffect(() => {
         let total = 0;
         carts.forEach(item => total += item.quantity);
