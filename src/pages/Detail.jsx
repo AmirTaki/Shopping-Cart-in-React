@@ -6,7 +6,8 @@ import {  use, useEffect, useState } from "react";
 const Detail = () => {
     const {slug} = useParams();
     const [detail, setDetail] =  useState([]);
-    const [quantity, setQuantitiy] = useState(1)
+    const [quantity, setQuantitiy] = useState(1);
+
     useEffect(() => {
         const findDetail =  Products.filter(product => product.slug === slug);
 
@@ -14,9 +15,12 @@ const Detail = () => {
 
     }, [slug])
     const handleMinusQuantity = () => {
-        setQuantitiy(quantity - 1 < 1 ? 1 : quantity -1);
+        console.log('ok')
+        setQuantitiy(quantity - 1 < 1 ? 1 : quantity - 1);
     }
-
+    const handlePlusQuantity = () => {
+        setQuantitiy(quantity + 1)
+    }
     return (
 
         <div>
@@ -33,7 +37,7 @@ const Detail = () => {
                     <div className="flex gap-5">
                         <div className="flex gap-2 justify-center items-center">
                             <button onClick={handleMinusQuantity} className="bg-gray-100 h-full w-10 font-bold text-xl rounded-xl flex justify-center items-center" >-</button>
-                            <span className="bg-gray-100 h-full w-10 font-bold text-xl rounded-xl flex justify-center items-center"    >1</span>
+                            <span className="bg-gray-100 h-full w-10 font-bold text-xl rounded-xl flex justify-center items-center"    >{quantity}</span>
                             <button onClick = {handlePlusQuantity} className="bg-gray-100 h-full w-10 font-bold text-xl rounded-xl flex justify-center items-center" >+</button>
                         </div>
                         <button className="bg-slate-900 text-white px-7 py-3 rounded-xl shadow-2xl">
