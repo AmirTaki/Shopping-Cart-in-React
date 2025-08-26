@@ -16,6 +16,9 @@ const cartSlice = createSlice({
             else {
                 state.items.push ({productId, quantity})
             }
+        },
+        changeQuantity(state, action){
+            const {productId, quantity}   = action.payload;
         }
     }
 })

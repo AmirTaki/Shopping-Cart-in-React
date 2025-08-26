@@ -9,8 +9,8 @@ const CarTab = () => {
             <h2 className="p-5 text-white text-2xl">Shopping Cart</h2>
             <div className="p-5">
                 {carts.map((item , key) => (
-                    // <CartItem key = {key} data = {item} />
-                    <h1>23</h1>
+                    <CartItem key = {key} data = {item} />
+        
                 ))}
             </div>
             <div className="grid grid-cols-2">
