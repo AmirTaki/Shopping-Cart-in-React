@@ -2,10 +2,12 @@ import { Link, Route } from "react-router-dom";
 import iconCart from "../assets/images/iconCart.png"
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
+import { addToCart } from "../stores/cart";
 
 const ProductCart = (props) => {
     const carts = useSelector(store => store.cart.items);
-    const handelAddToCart = () = > {
+    const dipath = useDispatch();
+    const handelAddToCart = () => {
 
     }
     const {id, name, price, image, slug} = props.data;
