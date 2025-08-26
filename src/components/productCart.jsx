@@ -8,6 +8,7 @@ const ProductCart = (props) => {
     const carts = useSelector(store => store.cart.items);
     // console.log(carts)
     const dipath = useDispatch();
+    
     const handelAddToCart = () => {
         dipath(addToCart({
             productId: id,

@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import {Products} from "../Products"
 
-import { use, useEffect, useState } from "react";
+import {  useEffect, useState } from "react";
 
 const Detail = () => {
     const {slug} = useParams();
@@ -12,6 +12,7 @@ const Detail = () => {
         findDetail.length > 0 ? setDetail(findDetail[0]) : window.location.href = "/"
 
     }, [slug])
+    console.log('ok')
     return (
 
         <div>
