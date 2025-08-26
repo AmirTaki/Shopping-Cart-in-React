@@ -13,7 +13,10 @@ const Detail = () => {
         findDetail.length > 0 ? setDetail(findDetail[0]) : window.location.href = "/"
 
     }, [slug])
-    console.log('ok')
+    const handleMinusQuantity = () => {
+        setQuantitiy(quantity - 1 < 1 ? 1 : quantity -1);
+    }
+
     return (
 
         <div>
