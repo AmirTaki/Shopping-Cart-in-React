@@ -1,11 +1,12 @@
 import { useParams } from "react-router-dom";
 import {Products} from "../Products"
 
-import {  useEffect, useState } from "react";
+import {  use, useEffect, useState } from "react";
 
 const Detail = () => {
     const {slug} = useParams();
     const [detail, setDetail] =  useState([]);
+    const [quantity, setQuantitiy] = useState(1)
     useEffect(() => {
         const findDetail =  Products.filter(product => product.slug === slug);
 
