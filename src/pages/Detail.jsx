@@ -19,6 +19,9 @@ const Detail = () => {
                 <div className="">
                     <img src={detail.image} alt="" className="w-full" />
                 </div>
+                <div className="flex flex-col gap-5">
+                    <h1 className="text-4xl uppercase font-bold">{detail.name}</h1>
+                </div>
             </div>
         </div>
     )
