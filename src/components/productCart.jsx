@@ -7,10 +7,10 @@ import { addToCart } from "../stores/cart";
 const ProductCart = (props) => {
     const carts = useSelector(store => store.cart.items);
     // console.log(carts)
-    const dipath = useDispatch();
+    const dispatch = useDispatch();
     
     const handelAddToCart = () => {
-        dipath(addToCart({
+        dispatch(addToCart({
             productId: id,
             quantity: 1
         }))

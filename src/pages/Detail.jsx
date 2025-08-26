@@ -9,7 +9,7 @@ const Detail = () => {
     const {slug} = useParams();
     const [detail, setDetail] =  useState([]);
     const [quantity, setQuantitiy] = useState(1);
-    const dispath = useDispatch();
+    const dispatch = useDispatch();
 
     useEffect(() => {
         const findDetail =  Products.filter(product => product.slug === slug);
@@ -24,10 +24,10 @@ const Detail = () => {
         setQuantitiy(quantity + 1)
     }
     const handleAddToCart = () => {
-        dispath(addToCart({
+        dispatch(addToCart({
             productId: detail.id,
             quantity: quantity
-        }))
+        }));
     }
     return (
 
