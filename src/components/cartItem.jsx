@@ -8,7 +8,10 @@ const CartItem = (props) => {
     const [detail, setDetail] = useState([]);
     useEffect(() => {
         const findDetail = Products.filter(product => product.id === productId)[0]
+        setDetail(findDetail)
     }, [productId])
+
+    
     return (
         <>
         </>
