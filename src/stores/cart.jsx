@@ -13,7 +13,9 @@ const cartSlice = createSlice({
             if(indexProductId >= 0 )[
                 state.items[indexProductId].quantity += quantity
             ]
-            state.items.push ({productId, quantity})
+            else {
+                state.items.push ({productId, quantity})
+            }
         }
     }
 })
