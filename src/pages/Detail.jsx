@@ -7,8 +7,10 @@ const Detail = () => {
     const [detail, setDetail] =  useState([]);
     useEffect(() => {
         const findDetail =  Products.filter(product => product.slug === slug);
-        
-    })
+
+        findDetail.length > 0 ? setDetail(findDetail[0]) : window.location.href = "/"
+
+    }, [slug])
     return (
         <>
             Detail
