@@ -17,7 +17,11 @@ const CartItem = (props) => {
             <img src={detail.image} alt="" className="w-12" />
             <h3>{detail.name}</h3>
             <p>${detail.price * quantity}</p>
-            
+            <div className="w-20 flex justify-between ">
+                <button>-</button>
+                <span>{quantity}</span>
+                <button>+</button>
+            </div>
        </div>
     )
 }
