@@ -32,6 +32,9 @@ const Detail = () => {
                             <span className="bg-gray-100 h-full w-10 font-bold text-xl rounded-xl flex justify-center items-center"    >1</span>
                             <button className="bg-gray-100 h-full w-10 font-bold text-xl rounded-xl flex justify-center items-center" >+</button>
                         </div>
+                        <button className="bg-state-900 text-white px-7 py-3 rounded-xl shadow-2xl">
+                            Add To Cart
+                        </button>
                     </div>
                 </div>
             </div>
