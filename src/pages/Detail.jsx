@@ -27,9 +27,9 @@ const Detail = () => {
                     </p>
                     <div className="fflex gpa-5">
                         <div className="flex gap-2 justify-center items-center">
-                            <button>-</button>
-                            <span>1</span>
-                            <button>+</button>
+                            <button className="bg-gray-100 h-full w-10 font-bold text-xl rounded-xl flex justify-center items-center" >-</button>
+                            <span className="bg-gray-100 h-full w-10 font-bold text-xl rounded-xl flex justify-center items-center"    >1</span>
+                            <button className="bg-gray-100 h-full w-10 font-bold text-xl rounded-xl flex justify-center items-center" >+</button>
                         </div>
                     </div>
                 </div>
