@@ -9,8 +9,8 @@ const CarTab = () => {
                 
             </div>
             <div className="grid grid-cols-2">
-                <button>CLOSE</button>
-                <button>CHECKOUT</button>
+                <button className="bg-black text-white">CLOSE</button>
+                <button className="bg-amber-600 text-white">CHECKOUT</button>
             </div>
 
         </div>
