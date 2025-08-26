@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import {Products} from "../Products"
+
 import { use, useEffect, useState } from "react";
 
 const Detail = () => {
@@ -21,6 +22,9 @@ const Detail = () => {
                 </div>
                 <div className="flex flex-col gap-5">
                     <h1 className="text-4xl uppercase font-bold">{detail.name}</h1>
+                    <p className="font-bold text-3xl">
+                        {detail.price}
+                    </p>
                 </div>
             </div>
         </div>
