@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import iconCart from "../assets/images/iconCart.png";
 import { useDispatch, useSelector } from "react-redux";
+import { useState } from "react";
 togg
 
 
 const Header = () => {
+    const [totalQuantity, setTotalQuantity] = useState(0)
     return (
         <header className="flex justify-between itmes-center mb-5">
             <Link to = '/' className="text-xl font-semibold">Home.</Link>
@@ -12,7 +14,7 @@ const Header = () => {
                 <img src={iconCart} alt="" className="w-6" />
                 <span 
                     className="absolute top-2/3 right-1/2 bg-red-500 text-white text-sm w-5 h-5 rounded-full  flex justify-center items-center"
-                >{}</span>
+                >{totalQuantity}</span>
             </div>
         </header>
     )
