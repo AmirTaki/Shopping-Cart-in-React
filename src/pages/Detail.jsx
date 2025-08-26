@@ -12,9 +12,10 @@ const Detail = () => {
 
     }, [slug])
     return (
-        <>
-            Detail
-        </>
+
+        <div>
+            <h2 className="text-3xl text-center">PRODUCT DETAIL</h2>
+        </div>
     )
 }
 
