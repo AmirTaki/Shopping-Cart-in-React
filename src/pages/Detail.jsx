@@ -1,7 +1,9 @@
 import { useParams } from "react-router-dom";
 import {Products} from "../Products"
-
 import {  use, useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../stores/cart";
+
 
 const Detail = () => {
     const {slug} = useParams();
@@ -15,11 +17,13 @@ const Detail = () => {
 
     }, [slug])
     const handleMinusQuantity = () => {
-        console.log('ok')
         setQuantitiy(quantity - 1 < 1 ? 1 : quantity - 1);
     }
     const handlePlusQuantity = () => {
         setQuantitiy(quantity + 1)
+    }
+    const handleAddToCart = () => {
+
     }
     return (
 
@@ -40,7 +44,7 @@ const Detail = () => {
                             <span className="bg-gray-100 h-full w-10 font-bold text-xl rounded-xl flex justify-center items-center"    >{quantity}</span>
                             <button onClick = {handlePlusQuantity} className="bg-gray-100 h-full w-10 font-bold text-xl rounded-xl flex justify-center items-center" >+</button>
                         </div>
-                        <button className="bg-slate-900 text-white px-7 py-3 rounded-xl shadow-2xl">
+                        <button onClick={handleAddToCart} className="bg-slate-900 text-white px-7 py-3 rounded-xl shadow-2xl">
                             Add To Cart
                         </button>
                     </div>
