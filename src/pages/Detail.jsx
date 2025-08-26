@@ -29,9 +29,9 @@ const Detail = () => {
                     </p>
                     <div className="flex gap-5">
                         <div className="flex gap-2 justify-center items-center">
-                            <button className="bg-gray-100 h-full w-10 font-bold text-xl rounded-xl flex justify-center items-center" >-</button>
+                            <button onClick={handleMinusQuantity} className="bg-gray-100 h-full w-10 font-bold text-xl rounded-xl flex justify-center items-center" >-</button>
                             <span className="bg-gray-100 h-full w-10 font-bold text-xl rounded-xl flex justify-center items-center"    >1</span>
-                            <button className="bg-gray-100 h-full w-10 font-bold text-xl rounded-xl flex justify-center items-center" >+</button>
+                            <button onClick = {handlePlusQuantity} className="bg-gray-100 h-full w-10 font-bold text-xl rounded-xl flex justify-center items-center" >+</button>
                         </div>
                         <button className="bg-slate-900 text-white px-7 py-3 rounded-xl shadow-2xl">
                             Add To Cart
