@@ -2,11 +2,12 @@ import { Link } from "react-router-dom";
 import iconCart from "../assets/images/iconCart.png";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
-togg
+
 
 
 const Header = () => {
     const [totalQuantity, setTotalQuantity] = useState(0)
+    const carts = useSelector(store => store.cart.items);
     return (
         <header className="flex justify-between itmes-center mb-5">
             <Link to = '/' className="text-xl font-semibold">Home.</Link>
