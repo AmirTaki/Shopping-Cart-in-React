@@ -4,7 +4,11 @@ import { use, useEffect, useState } from "react";
 
 const Detail = () => {
     const {slug} = useParams();
-    const [detail, setDetail] =  useState();
+    const [detail, setDetail] =  useState([]);
+    useEffect(() => {
+        const findDetail =  Products.filter(product => product.slug === slug);
+        
+    })
     return (
         <>
             Detail
