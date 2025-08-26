@@ -24,7 +24,10 @@ const Detail = () => {
         setQuantitiy(quantity + 1)
     }
     const handleAddToCart = () => {
-
+        dispath(addToCart({
+            productId: detail.id,
+            quantity: quantity
+        }))
     }
     return (
 
