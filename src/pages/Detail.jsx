@@ -15,6 +15,11 @@ const Detail = () => {
 
         <div>
             <h2 className="text-3xl text-center">PRODUCT DETAIL</h2>
+            <div className="grid grid-cols-2 gap-5 mt-5">
+                <div className="">
+                    <img src={detail.image} alt="" className="w-full" />
+                </div>
+            </div>
         </div>
     )
 }
