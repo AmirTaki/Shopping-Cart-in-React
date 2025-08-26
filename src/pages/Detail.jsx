@@ -25,6 +25,13 @@ const Detail = () => {
                     <p className="font-bold text-3xl">
                         {detail.price}
                     </p>
+                    <div className="fflex gpa-5">
+                        <div className="flex gap-2 justify-center items-center">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
