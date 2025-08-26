@@ -1,11 +1,13 @@
 import { Link, Route } from "react-router-dom";
 import iconCart from "../assets/images/iconCart.png"
-import { useSelector } from "react-redux";
-
+import { useDispatch, useSelector } from "react-redux";
+import { useState } from "react";
 
 const ProductCart = (props) => {
     const carts = useSelector(store => store.cart.items);
-    console.log(carts)
+    const handelAddToCart = () = > {
+
+    }
     const {id, name, price, image, slug} = props.data;
     return(
         <div className="bg-white p-5 rounded-xl shadow-sm">
@@ -17,7 +19,7 @@ const ProductCart = (props) => {
                 <p>
                     $<span className="text-2xl font-medium">{price}</span>
                 </p>
-                <button className="bg-gray-300 p-2 rounded-md text-sm hover:bg-gray-400 flex gap-2">
+                <button onClick={handelAddToCart} className="bg-gray-300 p-2 rounded-md text-sm hover:bg-gray-400 flex gap-2">
                     <img src={iconCart} alt="" className="w-5" />
                     Add To Cart
                 </button>

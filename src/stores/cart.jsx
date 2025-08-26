@@ -18,4 +18,4 @@ export const {addToCart} = cartSlice.actions;
 export default cartSlice.reducer;
 
 // https://www.youtube.com/watch?v=NJ1inoC1L1k&list=PLe28tn1x4EIYkPFBrutgP-j1Pe8edxLiz
-// 
+// https://github.com/HoanghoDev/youtube_v2/blob/main/add-to-cart-react/src/products.js
