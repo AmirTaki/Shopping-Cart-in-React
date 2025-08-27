@@ -29,13 +29,8 @@ const cartSlice = createSlice({
                 state.items = state.items.filter(item => item.productId !== productId);
             }
         },
-        toggleStatusTab(status){
-                if(state.statusTab === false){
-                    state.statusTab = true
-                }
-                else {
-                    state.statusTab = false;
-                }
+        toggleStatusTab(state){
+            state.statusTab =  state.statusTab === false ? true : false;
         }
     }
 })
