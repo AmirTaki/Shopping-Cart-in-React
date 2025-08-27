@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
-    items : []
+    items : [],
+    statusTab :false,
 }
 
 const cartSlice = createSlice({
@@ -27,6 +28,11 @@ const cartSlice = createSlice({
                 // Remove the item from the array if quantity is 0 or less
                 state.items = state.items.filter(item => item.productId !== productId);
             }
+        },
+        toggleStatusTab(status){
+                if(state.statusTab === false){
+                    
+                }
         }
     }
 })
