@@ -34,9 +34,9 @@ const CartItem = (props) => {
             <h3>{detail.name}</h3>
             <p>${detail.price * quantity}</p>
             <div className="w-20 flex justify-between ">
-                <button className="bg-gray-200 rounded-full w-6 h-6 text-cyan-600" onClick={handleMinusQuantity}>-</button>
+                <button className="bg-gray-200 rounded-full w-6 h-6 text-cyan-600 mr-2" onClick={handleMinusQuantity}>-</button>
                 <span>{quantity}</span>
-                <button className="bg-gray-200 rounded-full w-6 h-6 text-cyan-600" onClick={handlePlusQuantity}>+</button>
+                <button className="bg-gray-200 rounded-full w-6 h-6 text-cyan-600 ml-2" onClick={handlePlusQuantity}>+</button>
             </div>
        </div>
     )
