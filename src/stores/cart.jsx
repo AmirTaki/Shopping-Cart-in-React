@@ -31,13 +31,16 @@ const cartSlice = createSlice({
         },
         toggleStatusTab(status){
                 if(state.statusTab === false){
-                    
+                    state.statusTab = true
+                }
+                else {
+                    state.statusTab = false;
                 }
         }
     }
 })
 
-export const {addToCart, changeQuantity} = cartSlice.actions;
+export const {addToCart, changeQuantity, toggleStatusTab} = cartSlice.actions;
 export default cartSlice.reducer;
 
 // https://www.youtube.com/watch?v=NJ1inoC1L1k&list=PLe28tn1x4EIYkPFBrutgP-j1Pe8edxLiz
