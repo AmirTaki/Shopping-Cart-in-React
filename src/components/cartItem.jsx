@@ -8,6 +8,7 @@ import { changeQuantity } from "../stores/cart";
 const CartItem = (props) => {
     const {productId, quantity} = props.data;
     const [detail, setDetail] = useState([]);
+    const dispatch = useDispatch();
     useEffect(() => {
         const findDetail = Products.filter(product => product.id === productId)[0]
         setDetail(findDetail)
@@ -20,7 +21,7 @@ const CartItem = (props) => {
             <h3>{detail.name}</h3>
             <p>${detail.price * quantity}</p>
             <div className="w-20 flex justify-between ">
-                <button className="bg-gray-200 rounded-full w-6 h-6 text-cyan-600">-</button>
+                <button className="bg-gray-200 rounded-full w-6 h-6 text-cyan-600" onClick={handleMinusQuantity}>-</button>
                 <span>{quantity}</span>
                 <button className="bg-gray-200 rounded-full w-6 h-6 text-cyan-600">+</button>
             </div>
