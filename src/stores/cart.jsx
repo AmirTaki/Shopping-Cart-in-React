@@ -17,6 +17,7 @@ const cartSlice = createSlice({
             else {
                 state.items.push ({productId, quantity})
             }
+            localStorage.setItem("carts", JSON.stringify(state.items));
         },
         changeQuantity(state, action){
             const {productId, quantity}   = action.payload;
@@ -28,6 +29,7 @@ const cartSlice = createSlice({
                 // Remove the item from the array if quantity is 0 or less
                 state.items = state.items.filter(item => item.productId !== productId);
             }
+            localStorage.setItem("carts", JSON.stringify(state.items));
         },
         toggleStatusTab(state){
             state.statusTab =  state.statusTab === false ? true : false;
