@@ -5,9 +5,9 @@ import { toggleStatusTab } from "../stores/cart";
 const CarTab = () => {
     const carts = useSelector(store => store.cart.items);
     const statusTab =  useSelector(store => store.cart.statusTab);
-    const dispath = useDispatch();
+    const disapatch = useDispatch();
     const handleCloseTabCart = () => {
-        
+        disapatch(toggleStatusTab())
     }
     return (
         <div className={`fixed top-0 right-0 bg-gray-700 shadow-2xl w-96 h-full grid grid-rows-[60px_1fr_60px] 
