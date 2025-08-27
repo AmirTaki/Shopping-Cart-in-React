@@ -23,8 +23,9 @@ const cartSlice = createSlice({
             if(quantity > 0){
                 state.items[indexProductId].quantity = quantity;   
             }
-            else {
-                delete state.items[indexProductId];
+             else {
+                // Remove the item from the array if quantity is 0 or less
+                state.items = state.items.filter(item => item.productId !== productId);
             }
         }
     }
@@ -35,3 +36,6 @@ export default cartSlice.reducer;
 
 // https://www.youtube.com/watch?v=NJ1inoC1L1k&list=PLe28tn1x4EIYkPFBrutgP-j1Pe8edxLiz
 // https://github.com/HoanghoDev/youtube_v2/blob/main/add-to-cart-react/src/products.js
+
+
+// 25:13

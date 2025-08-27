@@ -3,8 +3,6 @@ import { useEffect, useState } from "react";
 import { Products } from "../Products";
 import { useDispatch } from "react-redux";
 import { changeQuantity } from "../stores/cart";
-c
-
 
 
 const CartItem = (props) => {

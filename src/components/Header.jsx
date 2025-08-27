@@ -15,9 +15,9 @@ const Header = () => {
         setTotalQuantity(total);
     }, [carts]);
 
-    //  const handleOpenTabCart = () => {
-    //     dispatch(toggleStatusTab());
-    // }
+     const handleOpenTabCart = () => {
+        dispatch(toggleStatusTab());
+    }
     return (
         <header className="flex justify-between itmes-center mb-5">
             <Link to = '/' className="text-xl font-semibold">Home.</Link>
