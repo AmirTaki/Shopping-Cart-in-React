@@ -14,6 +14,12 @@ const CartItem = (props) => {
         setDetail(findDetail)
     }, [productId])
 
+    const handleMinusQuantity = ( ) => {
+        dispatch(changeQuantity({
+            productId: productId,
+            quantity : productId - 1;
+        }))
+    }
 
     return (
        <div className="flex justify-between items-center bg-slate-600 text-white p-2 border-b-2 border-slate-700 gap-5 rounded-md">
